@@ -9,7 +9,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, '../dist'),
         filename:'[name].[chunkhash:5].js',
-        chunkFilename: '[id].js',
+        chunkFilename: '[name].[chunkhash:5].js',
         publicPath: ''
     },
     resolve: {
@@ -47,7 +47,7 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].[chunkhash:5].css',
-            chunkFilename: '[id:5].css'
+            chunkFilename: '[name].[chunkhash:5].css'
         }),
         new HtmlWebpackPlugin({
             template: './public/index.html',
