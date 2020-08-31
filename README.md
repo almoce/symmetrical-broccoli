@@ -1,1 +1,2 @@
 # symmetrical-broccoli
+Webpack + React
