@@ -7,6 +7,15 @@ module.exports = {
             {
                 path: '/api/**',
                 target: 'http://192.168.0.124:1001'
+            },
+            {
+                path: '/proxy/**',
+                target: 'http://www.google.com',
+                changeOrigin: true,
+                pathRewrite: {
+                    '^/proxy': '/'
+                }
+            
             }
         ]
     }
