@@ -19,6 +19,8 @@
     "homepage": "https://github.com/almoce/symmetrical-broccoli#readme",
     "devDependencies": {
         "@babel/core": "^7.11.1",
+        "@babel/plugin-transform-regenerator": "^7.12.1",
+        "@babel/plugin-transform-runtime": "^7.12.10",
         "@babel/preset-env": "^7.11.0",
         "@babel/preset-react": "^7.10.4",
         "autoprefixer": "^9.8.6",
@@ -29,6 +31,8 @@
         "mini-css-extract-plugin": "^0.10.0",
         "postcss-loader": "^3.0.0",
         "style-loader": "^1.2.1",
+        "stylus": "^0.54.8",
+        "stylus-loader": "^4.3.1",
         "url-loader": "^4.1.0",
         "webpack": "^4.44.1",
         "webpack-cli": "^3.3.12",

@@ -28,7 +28,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 use:[
-                    {loader: 'style-loader'},
+                    {loader:  !process.env.WEBPACK_DEV_SERVER ? MiniCssExtractPlugin.loader : 'style-loader'},
                     {loader: MiniCssExtractPlugin.loader},
                     {loader: 'css-loader'},
                     {loader: 'postcss-loader',
